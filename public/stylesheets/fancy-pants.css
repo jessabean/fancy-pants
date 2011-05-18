@@ -3,13 +3,14 @@ html, body {
   padding:0;
 }
 
+
 body {
   background:#010717;
   color:#fff;
 }
 
 div#rich {
-  background: url(/images/rich-kilmer.jpg) right bottom no-repeat;
+  background: #010717 url(/images/rich-kilmer.jpg) right bottom no-repeat;
   height:600px;
   margin:0;
   position:absolute;
@@ -18,7 +19,6 @@ div#rich {
   width:600px;
   z-index:-1;
 }
-
 
 h1 {
   background:rgba(0,0,0,0.5);
