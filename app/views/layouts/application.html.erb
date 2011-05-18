@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FancyPants</title>
+  <%= stylesheet_link_tag "fancy-pants" %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div id="rich"></div>
+<%= yield %>
+
+</body>
+</html>
