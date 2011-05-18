@@ -1,12 +1,12 @@
 html, body {
   margin:0;
   padding:0;
-}
-
-
-body {
   background:#010717;
   color:#fff;
+}
+
+div.container {
+  height:100%;
 }
 
 div#rich {
