@@ -1,12 +1,15 @@
 html, body {
   margin:0;
   padding:0;
+}
+
+body {
+  height:100%;
   background:#010717;
-  color:#fff;
+  color:#fff;  
 }
 
 div.container {
-  height:100%;
 }
 
 div#rich {
