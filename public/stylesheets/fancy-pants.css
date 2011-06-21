@@ -27,9 +27,10 @@ body {
 h1 {
   margin:210px 0 10px 0; 
   padding:0; 
-  font-size:18px; 
+  font-size:20px; 
   font-weight:normal; 
   font-style:italic;
+  font-weight:bold;
 }
 
 h2 {
