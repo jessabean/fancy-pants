@@ -24,6 +24,24 @@ body {
   width:400px;
 }
 
+@media screen and (max-device-width:850px) {
+  #pants-container {
+    background:rgba(255, 255, 255, 0.75);
+    width:360px;
+    padding:20px;
+  }
+  
+}
+
+
+@media screen and (max-device-width: 850px) {
+  #pants-container {
+    background:rgba(255, 255, 255, 0.75);
+    width:360px;
+    padding:20px;
+  }
+}
+
 h1 {
   margin:210px 0 10px 0; 
   padding:0; 
@@ -41,8 +59,7 @@ h2 {
   color:#508395; 
   padding:20px 0 0 0; 
   margin:0; 
-/*  text-align:center; 
-*/  font-family:'LeagueGothicRegular', Helvetica, Arial, sans-serif; 
+  font-family:'LeagueGothicRegular', Helvetica, Arial, sans-serif; 
   text-transform:uppercase;
 }
 
