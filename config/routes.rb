@@ -49,6 +49,10 @@ FancyPants::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => "pants#index"
+  
+  get "/edit" => "pants#edit"
+
+  post "/" => "pants#update"
 
   # See how all your routes lay out with "rake routes"
 

@@ -1,5 +1,10 @@
 <div id="pants-container">
   <h1>Is Rich Kilmer wearing white pants?</h1>
-  <%= render :partial => 'answer_yes' %>
-  <%= render :partial => 'kilmerfoo_yes' %>
+  <% if @p == "true" %>
+    <%= render :partial => 'answer_yes' %>
+    <%= render :partial => 'kilmerfoo_yes' %>
+  <% else %>
+    <%= render :partial => 'answer_no' %>
+    <%= render :partial => 'kilmerfoo_no' %>
+  <% end %>
 </div>
