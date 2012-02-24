@@ -9,57 +9,46 @@
     font-style: normal;
 
 }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  padding:0; 
-  margin:0; 
+  padding:0;
+  margin:0;
   font-family:Georgia, Times, serif;
-  background:#e0dbd7 url(/images/rich.jpg) top right no-repeat; 
-  min-height:300px; 
-  color:#444; 
+  background:#e0dbd7 url(/images/rich.jpg) 400px top no-repeat;
+  min-height:300px;
+  color:#444;
   font-size:14px;
 }
 
 #pants-container {
-  margin-left: 50px; 
+  margin-left: 50px;
   width:400px;
 }
 
-@media screen and (max-device-width:850px) {
-  #pants-container {
-    background:rgba(255, 255, 255, 0.75);
-    width:360px;
-    padding:20px;
-  }
-  
-}
-
-
-@media screen and (max-device-width: 850px) {
-  #pants-container {
-    background:rgba(255, 255, 255, 0.75);
-    width:360px;
-    padding:20px;
-  }
-}
-
 h1 {
-  margin:210px 0 10px 0; 
-  padding:0; 
-  font-size:20px; 
-  font-weight:normal; 
+  margin:210px 0 10px 0;
+  padding:0;
+  font-size:20px;
+  font-weight:normal;
   font-style:italic;
   font-weight:bold;
 }
 
 h2 {
-  position:absolute; 
-  top:0; 
-  width: 400px; 
-  height:300px; 
-  color:#508395; 
-  padding:20px 0 0 0; 
-  margin:0; 
-  font-family:'LeagueGothicRegular', Helvetica, Arial, sans-serif; 
+  position:absolute;
+  top:0;
+  width: 400px;
+  height:300px;
+  color:#508395;
+  padding:20px 0 0 0;
+  margin:0;
+  font-family:'LeagueGothicRegular', Helvetica, Arial, sans-serif;
   text-transform:uppercase;
 }
 
@@ -68,12 +57,67 @@ h2.no {
 }
 
 h2.yes {
-  font-size:136px; 
+  font-size:136px;
   line-height:134px;
 }
 
 p.kilmerfoo {
-  font-style:normal; 
-  font-size:14px; 
+  font-style:normal;
+  font-size:14px;
   line-height:20px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  body {background-position:340px top;}
+  #pants-container {
+    width:340px;
+    padding:20px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {background-position:300px top; background-size: 400px 552px;}
+  #pants-container {
+    width:300px;
+    padding:20px;
+  }
+
+  h1 {margin-top:140px;}
+
+  h2 {width: 300px; height: 225px;}
+  h2.yes {font-size: 100px; line-height: 100px;}
+  h2.no {font-size: 100px;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-position:center top;
+    background-size: 400px 552px;
+    position: relative;
+    font-size: 12px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h2.yes,
+  h2.no {
+    font-size: 76px;
+    height: auto;
+  }
+
+  h1 {margin-top: 96px; font-size: 16px; text-align: center;}
+
+
+  #pants-container {
+    width:100%;
+    padding:20px;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255,255,255, 0.65);
+  }
 }
